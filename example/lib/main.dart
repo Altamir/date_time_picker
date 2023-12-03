@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.event),
                 dateLabelText: 'Date',
                 timeLabelText: "Hour",
-                //use24HourFormat: false,
+                use24HourFormat: false,
                 //locale: Locale('pt', 'BR'),
                 selectableDayPredicate: (date) {
                   if (date.weekday == 6 || date.weekday == 7) {

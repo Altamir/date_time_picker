@@ -760,8 +760,8 @@ class _DateTimePickerState extends FormFieldState<String> {
     final ldNow = DateTime.now();
     final ldTime = DateTime(ldNow.year, ldNow.month, ldNow.day,
         ptTimePicked.hour, ptTimePicked.minute);
-    final lsHour = DateFormat("hh", widget.locale.toString()).format(ldTime);
-    final lsMinute = DateFormat("mm", widget.locale.toString()).format(ldTime);
+    final lsHour = DateFormat("hh", widget.locale?.toString()).format(ldTime);
+    final lsMinute = DateFormat("mm", widget.locale?.toString()).format(ldTime);
 
     _sTime = '$lsHour:$lsMinute';
     _sPeriod = ptTimePicked.period.index == 0 ? ' AM' : ' PM';
